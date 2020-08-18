@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>task8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="wrapper">
+     <div class="sidebar-left">
+        <h3><img src="logo.png" alt="">Linglee</h3>
+        <ul>
+            <li><a id="linka"><i class="fa fa-columns"></i>Dashboard</a></li>
+            <li><a id="linkb"><i class="fa fa-folder-o"></i>Classes</a></li>
+            <li><a id="linkc"><i class="fa fa-file-o"></i>Resouces</a></li>
+            <li><a id="linkd"><i class="fa fa-calendar-minus-o"></i>Learning plan</a></li>
+            <li><a id="linke"><i class="fa fa-comment-o"></i>Chat</a></li>
+            <li><a id="linkf"><i class="fa fa-pencil-square-o"></i>Settings</a></li>
+        </ul>
+        <div class="upgrade">
+            <div class="content">
+              <p> Upgrade to <b style="color:black">PRO</b> for<br>more resources.</p>
+              <div class="button"><p style="padding-top:10px;">upgrade</p></div>
+            </div>  
+        </div>
+     </div>
+     <div class="file-img">
+       <img src="file.png" alt="">         
+    </div>
+     <div class="main">
+        <div id="classes">
+            <h4>Classes</h4>
+            <div class="area"></div>
+        </div>
+        <div id="resources">
+            <h4>resources</h4>
+            <div class="area"></div>
+        </div>
+         <div id="dashboard">
+        <div class="child-img">
+            <img src="child.png" alt="">         
+         </div>
+            <h4>Dashboard
+                <div class="header">
+                    20 Sep 2019,Friday<div class="search"><i class="fa fa-search"></i></div>
+                </div>
+            </h4>
+        <div class="main-top">
+            <h3>Welcome back Anna</h3>
+            <p>You've learned 80% of your goal in this week!<br>
+                Keep it up and improve your results!
+            </p>
+        </div>
+        <div class="main-middle">
+           <div class="box1">
+               <h5>Latest results<p1>More<i class="fa fa-arrow-right"></i></p1></h5>
+               <ul>
+                <li><div class="results"><p>Unit 5-<span>Technology</span></p> <progress id="results-bar" value="25" max="100"></progress></div></li><hr>
+                <li><div class="results"><p>Unit 12-<span>Ecology</span></p> <progress id="results-bar" value="44" max="100"></progress></div></li><hr>
+                <li><div class="results"><p>Unit 9-<span>Real estate</span></p> <progress id="results-bar" value="40" max="100"></progress></div></li><hr>
+                <li><div class="results"><p>Unit 8-<span>Education</span></p> <progress id="results-bar" value="15" max="100"></progress></div></li><hr>
+                <li><div class="results"><p>Unit 16-<span>Job market</span></p> <progress id="results-bar" value="76" max="100"></progress></div></li>
+            </ul>   
+           </div>
+           <div class="box2">
+               <h5>Time spent on learning<p1>Last week<i class="fa fa-angle-down"></i></p1></h5>
+           </div>
+        </div>
+        <div class="your-courses"><h4>Your Courses</h4></div> 
+        <div class="middle-bottom">         
+            <div class="card1"><div class="icon"><p>A2</p></div><p><span>Business English</span><br>Grammer</p></div>
+            <div class="card2"><div class="icon"><p>B2</p></div><p><span>Common English</span><br>Verbs</p></div>
+            <div class="card3"><div class="icon"><p>C1</p></div><p><span>Bussiness Spanish</span><br>Vocabulory</p></div>
+        </div>
+    </div>
+</div>
+     <div class="sidebar-right"> 
+         <div class="logout">  
+         <h5>Logout<i class="fa fa-arrow-circle-o-right"></i></h5>   
+        </div>  
+         <div class="profile">
+           <div class="cde">
+               <img src="user.png" alt="">
+           </div>
+         <h4>Anna Morrison</h4>
+         <span>Student</span>
+        </div>
+        <div class="subjects">
+            <ul>
+                <li><div class="a"><div class="icon"><p>B2</p></div><h5>English</h5><span>High Intermediate</span><progress id="progress-bar" value="70" max="100"></progress></div></li>
+                <li><div class="a"><div class="icon"><p>C1</p></div><h5>Spanish</h5><span>Advanced</span><progress id="progress-bar" value="90" max="100"></progress></div></li>
+            </ul>   
+        </div>
+        <div class="reminders">
+            <h4>Remainders</h4>
+            <ul>
+                <li><div class="a"><div class="icon"><i class="fa fa-exclamation-circle"></i></div><h5>Eng-Vocabulary test</h5><span>24 Sep 2019,Friday</span></div></li>
+                <li><div class="a"><div class="icon"><i class="fa fa-envelope-o"></i></div><h5>Eng-Send grammer homework</h5><span>29 sep 2019,Wednesday</span></div></li>
+                <li><div class="a"><div class="icon"><i class="fa fa-envelope-o"></i></div><h5>Spanish-Send essey</h5><span>05 Oct 2019,Monday</span></div></li>
+            </ul>
+        </div>
+     </div>
+ </div>
+ <script>
+document.getElementById("linka").onclick = function(){       
+    document.getElementById("dashboard").style.display= "block";
+    document.getElementById("classes").style.display= "none";
+    document.getElementById("resources").style.display= "none";
+    document.getElementById("linka").style.color= "black";
+    document.getElementById("linkb").style.color= "#9d9ea5";
+    document.getElementById("linkc").style.color= "#9d9ea5";
+  }   
+  document.getElementById("linkb").onclick = function(){       
+    document.getElementById("dashboard").style.display= "none";
+    document.getElementById("classes").style.display= "block";
+    document.getElementById("resources").style.display= "none";
+    document.getElementById("linka").style.color= "#9d9ea5";
+    document.getElementById("linkb").style.color= "black";
+    document.getElementById("linkc").style.color= "#9d9ea5";
+    
+  }  
+  document.getElementById("linkc").onclick = function(){       
+    document.getElementById("dashboard").style.display= "none";
+    document.getElementById("classes").style.display= "none";
+    document.getElementById("resources").style.display= "block";
+    document.getElementById("linka").style.color= "#9d9ea5";
+    document.getElementById("linkb").style.color= "#9d9ea5";
+    document.getElementById("linkc").style.color= "black";
+  } 
+   </script>
+</body>
+</html>
